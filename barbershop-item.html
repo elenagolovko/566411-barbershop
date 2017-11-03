@@ -20,34 +20,39 @@
       </ul>
     </nav>   
   </header>
-  <main class = "item-container">
-    <h1> Набор для путешествий «Baxter of California»</h1>
-      <ul class = "item-navigation">
+  <main class = "container">
+    <h1 class = "page-title"> Набор для путешествий «Baxter of California»</h1>
+     <ul class = "breadcrumbs">
         <li><a href="index.html">Главная</a></li>
         <li><a href="catalog.html">Магазин</a></li>
-        <li><a href="barbershop-shop.html">Средства для ухода</a></li>
-        <li><a>Набор для путешествий «Baxter of California»</a></li>
-      </ul>
-      <section class = "item-gallery">
-        <h2 class = "visually-hidden">Фотогалерея товара</h2>
-          <figure class = "item-gallery-content">
-            <a href="#"><img src="img/item.jpg" width = "286" height = "164" alt = "Изображение товара"></a>
-          </figure>
-      </section>
-      <section class = "item-info">
-      	<h2 class = "visually-hidden">Информация о товаре</h2>
-        	<p>Есть в наличии</p>
-        	<span class = "article">Артикул:DEXTER-AE</span>
-      </section>
-      <section class = "item-description">
+        <li><a href="#">Средства для ухода</a></li>
+        <li class = "breadcrubms-current"> Набор для путешествий «Baxter of California»</li>
+    </ul>
+      <section class = "product-photos">
+        <h2 class = "visually-hidden">Изображения товара</h2>
+        <p class = "product-photo-full">
+          <img src="img/product-big.jpg" width = "468" height = "498" alt = "Фото всего набора">
+        </p>
+        <ul class = "product-photo-preview">
+          <li><img src="img/product-small-1.jpg" width = "140" height = "149" alt = "Фото в анфас"></li>
+        <li><img src="img/product-small-2.jpg" width = "140" height = "149" alt = "Фото в профиль"></li>
+        <li><img src="img/product-small-3.jpg" width = "140" height = "149" alt = "Фото отдельной части">
+        </li>
+        </ul>
+      
+      <section class = "product-info">
       	<h2 class = "visually-hidden">Описание товара</h2>
-      		<p>Travel kit - необходимый аксесуар во время любого путешествия. В аккуратной кожаной сумке находится все, что нужно для бритья и ухода за кожей во время рабочей недели или отдыха: средство для умывания, увлажняющий крем, крем для бритья, крем после бритья, шампунь. Набор также может стать отличным подарком.</p>
-          <span class = "price">2 900 руб.</span>
-          <a class = "button" href = "buy.html">Купить</a>
-      </section>
-      <section class = "item-description">
-        <h2> В набор входят: </h2>
-          <ul class = "set-includes">
+        <p class = "product-avalability">Есть в наличии</p>
+        <p class = "product-article"> Артикул: dexter-ae</p>
+      	<p class = "product-text">Travel kit - необходимый аксесуар во время любого путешествия. В аккуратной кожаной сумке находится все, что нужно для бритья и ухода за кожей во время рабочей недели или отдыха: средство для умывания, увлажняющий крем, крем для бритья, крем после бритья, шампунь. Набор также может стать отличным подарком.</p>
+      
+      <p class = "product-price">
+          <b>2 900 руб.</b>
+          <a class = "button" href="#">Купить</a>
+        </p>    
+     
+        <h3> В набор входят: </h3>
+          <ul>
             <li>Средство для умывания (50 мл)</li>
             <li>Увлажняющий крем (50 мл)</li>
             <li>Крем для бритья (50 мл)</li>
@@ -58,18 +63,17 @@
   </main>
   <footer class = "main-footer">
     <p class = "footer-contacts">
-      <h2 class = "visually-hidden">Наш адрес</h2>
-      <p> Барбершоп «Бородинский»<br>
-        Адрес:Г.Санкт-Петербург,ул.Б.Коннюшенная,д.19/8<br>
-        <a href="map.html">Как нас найти?</a><br>
-        Телефон:+7(495)666-02-66
-      </p>
+       Барбершоп «Бородинский»<br>
+       Адрес:Г.Санкт-Петербург,ул.Б.Коннюшенная,д.19/8<br>
+       <a href="map.html">Как нас найти?</a><br>
+       Телефон:+7(495)666-02-66
+    </p>
     <div class = "footer-social">
       <b>Давайте дружить!</b>
         <ul>
-          <li><a class = "social-button" href="#">Мы ВКонтакте</a></li>
-          <li><a class = "social-button" href="#">Мы на Фейсбуке</a></li>
-          <li><a class = "social-button" href="#">Мы в Инстаграм</a></li>
+          <li><a class = "social-button" href="#">ВКонтакте</a></li>
+          <li><a class = "social-button" href="#">Фейсбук</a></li>
+          <li><a class = "social-button" href="#">Инстаграм</a></li>
         </ul>
     </div>
     <p class = "footer-copyright">
@@ -77,5 +81,12 @@
       <a class = "button" href="https://htmlacademy.ru">HTML Academy</a>
     </p>
   </footer>
+
+  <section class = "modal modal-login">
+    <h2>Личный кабинет</h2>
+    <p> Введите свой логин и пароль.</p>
+    <!--Здесь тоже будет форма-->
+    <span class = "modal-close">х</span>
+  </section>
 </body>
 </html>
