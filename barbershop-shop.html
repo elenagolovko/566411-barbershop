@@ -7,12 +7,12 @@
 <body>
  <header class = "main-header">
     <nav class = "main-navigation">
-       <a class = "main-header-logo" href = "index.html"><img src = "img/index-logo.svg" width = "368" height = "153" alt = "Логотип барбершопа «Бородинский» ">          </a>
+       <a class = "main-header-logo" href = "index.html"><img src = "img/logo.svg" width = "111" height = "24" alt = "Логотип барбершопа «Бородинский» ">          </a>
       <ul class = "site-navigation">
         <li><a href="info.html">Информация</a></li>
         <li><a href="news.html">Новости</a></li>
         <li><a href="price.html">Прайс-лист</a></li>
-        <li><a href="catalog.html">Магазин</a></li>
+        <li class = "site-navigation-current"><a href="catalog.html">Магазин</a></li>
         <li><a href="contacts.html">Контакты</a></li>
       </ul>
       <ul class = "user-navigation">
@@ -20,88 +20,149 @@
       </ul>
     </nav>   
   </header>
-  <main class = "shop">
-  	<h1>Средства для ухода</h1>
-  	<ul class = "item-navigation">
+  <main class = "container">
+  	<h1 class = "page-title">Средства для ухода</h1>
+  	<ul class = "breadcrumbs">
         <li><a href="index.html">Главная</a></li>
         <li><a href="catalog.html">Магазин</a></li>
+        <li class = "breadcrumbs-current">Средства для ухода</li>
     </ul>
-    <section class = "choice-fabricator">
-    	<h2>Производители</h2>
-    <ul class = "fabricators">
-    	<li>Baxter of California</li>
-    	<li>Mr Natty</li>
-    	<li>Suavecito</li>
-    	<li>Malin+Goetz</li>
-    	<li>Murray's</li>
-    	<li>American crew</li>
+    <section class = "filters">
+    	<h2 class = "visually-hidden">Фильтр товаров</h2>
+    <!--Здесь будет форма-->  
+    </section>
+    	
+    <section class = "catalog">
+    	<h2 class = "visually-hidden">Список средств для ухода</h2>
+    </section>
+    <ul class = "catalog-list">
+    	<li class = "catalog-item">
+    		<h3>
+    		<a href="catalog-item.html"><span class = "catalog-category">Набор для путешествий</span> 
+    			<span class = "catalog-item">«Baxter of California»</span>
+    		</a>
+    		</h3>
+    		<p>
+    			<a href="catalog-item-image">
+    				<img src="img/product-1.jpg" width = "220" height = "165" alt = "Набор для путешествий «Baxter of California»">
+    			</a> 			
+    		</p>
+    		<p class = "catalog-item-price">
+    			<b>2 900 руб.</b>
+    			<a class = "button" href="#">Купить</a>
+    		</p>		
+    	</li>
     </ul>
-    </section>
-    <section class = "choice-item-type">
-    	<h2>Группы товаров</h2>
-    	<ul class = "item-type">
-    		<li>Бритвенные принадлежности</li>
-    		<li>Средства для ухода</li>
-    		<li>Аксессуары</li>
-    	</ul>
-    </section>
-    <span class = "button show-button">Показать</span>
-    <article class = "item-1">
-    	<a href="#"><img src="img/catalog/item-1.jpg" width = "150" height = "100"></a>
-    	<h2>Набор для путешествий «Baxter of California»</h2>
-    	<span class = "price">2 900 руб.</span>
-    	<a href="barbershop-item.html">Купить</a>
-    </article>
-    <article class = "item-2">
-    	<a href="#"><img src="img/catalog/item-2.jpg" width = "150" height = "100"></a>
-    	<h2>Увлажняющий кондиционер «Baxter of California»</h2>
-    	<span class = "price">750 руб.</span>
-    	<a href="barbershop-item-2">Купить</a>
-    </article>
-    <article class = "item-3">
-    	<a href="#"><img src="img/catalog/item-3.jpg" width = "150" height = "100"></a>
-    	<h2>Гель для волос «Suavecito»</h2>
-    	<span class = "price">290 руб.</span>
-    	<a href="#">Купить</a>
-    </article>
-    <article class = "item-4">
-    	<a href="#"><img src="img/catalog/item-4.jpg" width = "150" height = "100"></a>
-    	<h2>Глина для укладки волос «American crew»</h2>
-    	<span class = "price">500 руб.</span>
-    	<a href="#">Купить</a>
-    </article>
-    <article class = "item-5">
-    	<a href="#"><img src="img/catalog/item-5.jpg" width = "150" height = "100"></a>
-    	<h2>Гель для волос «American crew»</h2>
-    	<span class = "price">300 руб.</span>
-    	<a href="#">Купить</a>
-    </article>
-    <article class = "item-6">
-    	<a href="#"><img src="img/catalog/item-6.jpg" width = "150" height = "100"></a>
-    	<h2>Набор для бритья «Baxter of California»</h2>
-    	<span class = "price">3 900 руб.</span>
-    	<a href="#">Купить</a>
-    </article>
-    <span class = "button button-page">1</span>
-    <span class = "button button-page">2</span>
-    <span class = "button button-page">3</span>
-    <span class = "button button-page">4</span>
+    <ul class = "catalog-list">
+    	<li class = "catalog-item">
+    		<h3>
+    		<a href="catalog-item.html"><span class = "catalog-category">Увлажняющий кондиционер</span> 
+    			<span class = "catalog-item">«Baxter of California»</span>
+    		</a>
+    		</h3>
+    		<p>
+    			<a href="catalog-item-image">
+    				<img src="img/product-2.jpg" width = "220" height = "165" alt = "Увлажняющий кондиционер «Baxter of California»">
+    			</a> 			
+    		</p>
+    		<p class = "catalog-item-price">
+    			<b>750 руб.</b>
+    			<a class = "button" href="#">Купить</a>
+    		</p>		
+    	</li>
+    </ul>
+   	<ul class = "catalog-list">
+    	<li class = "catalog-item">
+    		<h3>
+    		<a href="catalog-item.html"><span class = "catalog-category">Гель для волос</span> 
+    			<span class = "catalog-item">«Suavecito»</span>
+    		</a>
+    		</h3>
+    		<p>
+    			<a href="catalog-item-image">
+    				<img src="img/product-3.jpg" width = "220" height = "165" alt = "Гель для волос «Suavecito»">
+    			</a> 			
+    		</p>
+    		<p class = "catalog-item-price">
+    			<b>290 руб.</b>
+    			<a class = "button" href="#">Купить</a>
+    		</p>		
+    	</li>
+    </ul>
+    <ul class = "catalog-list">
+    	<li class = "catalog-item">
+    		<h3>
+    		<a href="catalog-item.html"><span class = "catalog-category">Глина для укладки волос</span> 
+    			<span class = "catalog-item">«American crew»</span>
+    		</a>
+    		</h3>
+    		<p>
+    			<a href="catalog-item-image">
+    				<img src="img/product-4.jpg" width = "220" height = "165" alt = "Глина для укладки волос «American crew»">
+    			</a> 			
+    		</p>
+    		<p class = "catalog-item-price">
+    			<b>500 руб.</b>
+    			<a class = "button" href="#">Купить</a>
+    		</p>		
+    	</li>
+    </ul>
+     <ul class = "catalog-list">
+    	<li class = "catalog-item">
+    		<h3>
+    		<a href="catalog-item.html"><span class = "catalog-category">Гель для волос</span> 
+    			<span class = "catalog-item">«American crew»</span>
+    		</a>
+    		</h3>
+    		<p>
+    			<a href="catalog-item-image">
+    				<img src="img/product-5.jpg" width = "220" height = "165" alt = "Гель для волос «American crew»">
+    			</a> 			
+    		</p>
+    		<p class = "catalog-item-price">
+    			<b>300 руб.</b>
+    			<a class = "button" href="#">Купить</a>
+    		</p>		
+    	</li>
+    </ul>
+    <ul class = "catalog-list">
+    	<li class = "catalog-item">
+    		<h3>
+    		<a href="catalog-item.html"><span class = "catalog-category">Набор для бритья</span> 
+    			<span class = "catalog-item">«Baxter of California»</span>
+    		</a>
+    		</h3>
+    		<p>
+    			<a href="catalog-item-image">
+    				<img src="img/product-6.jpg" width = "220" height = "165" alt = "Набор для бритья «Baxter of California»">
+    			</a> 			
+    		</p>
+    		<p class = "catalog-item-price">
+    			<b>3 900 руб.</b>
+    			<a class = "button" href="#">Купить</a>
+    		</p>		
+    	</li>
+    </ul>
+    <ul class = "pagination-list">
+    	<li class = "pagination-item"><a href="#">1</a></li>
+    	<li class = "pagination-item pagination-item-current"><a>2</a></li>
+    	<li class = "pagination-item"><a href="#">3</a></li>
+    	<li class = "pagination-item"><a href="#">4</a></li>
+    </ul>
   </main>
   <footer class = "main-footer">
     <p class = "footer-contacts">
-      <h2 class = "visually-hidden">Наш адрес</h2>
-      <p> Барбершоп «Бородинский»<br>
-        Адрес:Г.Санкт-Петербург,ул.Б.Коннюшенная,д.19/8<br>
-        <a href="map.html">Как нас найти?</a><br>
-        Телефон:+7(495)666-02-66
-      </p>
+       Барбершоп «Бородинский»<br>
+       Адрес:Г.Санкт-Петербург,ул.Б.Коннюшенная,д.19/8<br>
+       <a href="map.html">Как нас найти?</a><br>
+       Телефон:+7(495)666-02-66
     </p>
     <div class = "footer-social">
       <b>Давайте дружить!</b>
         <ul>
-          <li><a class = "social-button" href="#">Мы ВКонтакте</a></li>
-          <li><a class = "social-button" href="#">Мы на Фейсбуке</a></li>
-          <li><a class = "social-button" href="#">Мы в Инстаграм</a></li>
+          <li><a class = "social-button" href="#">ВКонтакте</a></li>
+          <li><a class = "social-button" href="#">Фейсбук</a></li>
+          <li><a class = "social-button" href="#">Инстаграм</a></li>
         </ul>
     </div>
     <p class = "footer-copyright">
@@ -109,5 +170,12 @@
       <a class = "button" href="https://htmlacademy.ru">HTML Academy</a>
     </p>
   </footer>
+
+  <section class = "modal modal-login">
+  	<h2>Личный кабинет</h2>
+  	<p> Введите свой логин и пароль.</p>
+  	<!--Здесь тоже будет форма-->
+  	<span class = "modal-close">х</span>
+  </section>
 </body>
 </html>
