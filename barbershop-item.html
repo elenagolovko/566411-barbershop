@@ -87,9 +87,27 @@
 
   <section class = "modal modal-login">
     <h2>Личный кабинет</h2>
-    <p> Введите свой логин и пароль.</p>
-    <!--Здесь тоже будет форма-->
-    <span class = "modal-close">х</span>
+    <p> Введите  пожалуйста свой логин и пароль.</p>
+      <form action="/echo" method="get">
+            <input type = "text" name = "login" value = "Логин" required>
+            <input type = "password" name = "password" value = "Пароль" required>
+            <input type="checkbox" name="remember-me" id="remember-me">
+            <label for = "remember-me">Запомните меня</label>
+            <input type = "submit" value = "Войти">
+      </form> 
+    <div class = "help">
+      <p><a href="#">Я забыл пароль!</a></p>
+    </div>
+    <span class = "modal-close">
+      <img src="img/cross.svg" width="12" height="12">
+    </span>
+    <span class = "user">
+      <img src="img/lock.svg" width="13" height="15">
+    </span>
+    <span>
+      <img src="img/user.svg" width="13" height="13">
+    </span>
+
   </section>
 </body>
 </html>
