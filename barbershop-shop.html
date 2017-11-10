@@ -21,7 +21,7 @@
         <span>Вход</span>
         </li>
       </ul>
-    </nav>   
+    </nav>
   </header>
   <main class = "container">
   	<h1 class = "page-title">Средства для ухода</h1>
@@ -32,43 +32,31 @@
     </ul>
     <section class = "filters">
     	<h2 class = "visually-hidden">Фильтр товаров</h2>
-        <form action="/echo" method="get">
+        <form class="filter" action="https://echo.htmlacademy.ru" method="get">
             <fieldset>
                 <legend>Производители:</legend>
-                <input type="radio" name="companies" id="company-1" checked>
-                <label for = "company-1">Baxter of California</label>
+                <ul>
+                  <li class="filter-option"><input class="visually-hidden filter-input filter-input-checkbox" type="radio" name="companies" id="company-1" checked><label for = "company-1">Baxter of California</label></li>
+                  <li class="filter-option"><input class="visually-hidden filter-input filter-input-checkbox" type="radio" name="companies" id="company-2"><label for = "company-2">Mr Natty</label></li>
+                  <li class="filter-option"><input class="visually-hidden filter-input filter-input-checkbox" type="radio" name="companies" id="company-3" checked> <label for = "company-3">Suavecito</label></li>
+                  <li class="filter-option"><input class="visually-hidden filter-input filter-input-checkbox" type="radio" name="companies" id="company-4"><label for = "company-4">Malin+Goetz</label></li>
+                  <li class="filter-option"><input class="visually-hidden filter-input filter-input-checkbox" type="radio" name="companies" id="company-5"><label for = "company-5">Murray's</label></li>
+                  <li class="filter-option"><input class="visually-hidden filter-input filter-input-checkbox" type="radio" name="companies" id="company-6" checked><label for = "company-6">American crew</label></li>
+                </ul>
 
-                <input type="radio" name="companies" id="company-2">
-                <label for = "company-2">Mr Natty</label>
-
-                <input type="radio" name="companies" id="company-3" checked>
-                <label for = "company-3">Suavecito</label>
-
-                <input type="radio" name="companies" id="company-4">
-                <label for = "company-4">Malin+Goetz</label>
-
-                <input type="radio" name="companies" id="company-5">
-                <label for = "company-5">Murray's</label>
-
-                <input type="radio" name="companies" id="company-6" checked>
-                <label for = "company-6">American crew</label>
             </fieldset>
             <fieldset>
                 <legend>Группы товаров:</legend>
-                <input type="radio" name="good-type" id="type-1">
-                <label for = "type-1">Бритвенные принадлежности</label>
-
-                <input type="radio" name="good-type" id="type-2" checked>
-                <label for = "type-2">Средства для ухода</label>
-
-                <input type="radio" name="good-type" id="type-3">
-                <label for = "type-3">Аксессуары</label>
+                <ul>
+                  <li class="filter-option"><input class="visually-hidden filter-input filter-input-radio" type="radio" name="good-type" id="type-1"><label for = "type-1">Бритвенные принадлежности</label></li>
+                  <li class="filter-option"><input class="visually-hidden filter-input filter-input-radio" type="radio" name="good-type" id="type-2" checked><label for = "type-2">Средства для ухода</label></li>
+                  <li class="filter-option"><input class="visually-hidden filter-input filter-input-radio" type="radio" name="good-type" id="type-3"><label for = "type-3">Аксессуары</label></li>
+                </ul>
             </fieldset>
-        </form> 
-   
-    <span class = "modal-close">
-      <img src="img/cross.svg" width="12" height="12">
-    </span>
+            <button type="submit" class="filter-button button">Показать</button>
+        </form>
+
+    <button class="button" type="button">Закрыть</button>
     </section>
     <section class = "catalog">
     	<h2 class = "visually-hidden">Список средств для ухода</h2>
@@ -76,109 +64,79 @@
     <ul class = "catalog-list">
     	<li class = "catalog-item">
     		<h3>
-    		<a href="catalog-item.html"><span class = "catalog-category">Набор для путешествий</span> 
+    		<a href="catalog-item.html"><span class = "catalog-category">Набор для путешествий</span></a>
     			<span class = "catalog-item">«Baxter of California»</span>
-    		</a>
     		</h3>
-    		<p>
-    			<a href="catalog-item-image">
-    				<img src="img/product-1.jpg" width = "220" height = "165" alt = "Набор для путешествий «Baxter of California»">
-    			</a> 			
-    		</p>
+    		<p><img src="img/product-1.jpg" width = "220" height = "165" alt = "Набор для путешествий «Baxter of California»"></p>
     		<p class = "catalog-item-price">
     			<b>2 900 руб.</b>
     			<a class = "button" href="#">Купить</a>
-    		</p>		
+    		</p>
     	</li>
     </ul>
     <ul class = "catalog-list">
     	<li class = "catalog-item">
     		<h3>
-    		<a href="catalog-item.html"><span class = "catalog-category">Увлажняющий кондиционер</span> 
+    		<a href="catalog-item.html"><span class = "catalog-category">Увлажняющий кондиционер</span></a>
     			<span class = "catalog-item">«Baxter of California»</span>
-    		</a>
     		</h3>
-    		<p>
-    			<a href="catalog-item-image">
-    				<img src="img/product-2.jpg" width = "220" height = "165" alt = "Увлажняющий кондиционер «Baxter of California»">
-    			</a> 			
-    		</p>
+    		<p>	<img src="img/product-2.jpg" width = "220" height = "165" alt = "Увлажняющий кондиционер «Baxter of California»"></p>
     		<p class = "catalog-item-price">
     			<b>750 руб.</b>
     			<a class = "button" href="#">Купить</a>
-    		</p>		
+    		</p>
     	</li>
     </ul>
    	<ul class = "catalog-list">
     	<li class = "catalog-item">
     		<h3>
-    		<a href="catalog-item.html"><span class = "catalog-category">Гель для волос</span> 
+    		<a href="catalog-item.html"><span class = "catalog-category">Гель для волос</span></a>
     			<span class = "catalog-item">«Suavecito»</span>
-    		</a>
     		</h3>
-    		<p>
-    			<a href="catalog-item-image">
-    				<img src="img/product-3.jpg" width = "220" height = "165" alt = "Гель для волос «Suavecito»">
-    			</a> 			
-    		</p>
+    		<p><img src="img/product-3.jpg" width = "220" height = "165" alt = "Гель для волос «Suavecito»"></p>
     		<p class = "catalog-item-price">
     			<b>290 руб.</b>
     			<a class = "button" href="#">Купить</a>
-    		</p>		
+    		</p>
     	</li>
     </ul>
     <ul class = "catalog-list">
     	<li class = "catalog-item">
     		<h3>
-    		<a href="catalog-item.html"><span class = "catalog-category">Глина для укладки волос</span> 
+    		<a href="catalog-item.html"><span class = "catalog-category">Глина для укладки волос</span></a>
     			<span class = "catalog-item">«American crew»</span>
-    		</a>
     		</h3>
-    		<p>
-    			<a href="catalog-item-image">
-    				<img src="img/product-4.jpg" width = "220" height = "165" alt = "Глина для укладки волос «American crew»">
-    			</a> 			
-    		</p>
+    		<p><img src="img/product-4.jpg" width = "220" height = "165" alt = "Глина для укладки волос «American crew»"></p>
     		<p class = "catalog-item-price">
     			<b>500 руб.</b>
     			<a class = "button" href="#">Купить</a>
-    		</p>		
+    		</p>
     	</li>
     </ul>
      <ul class = "catalog-list">
     	<li class = "catalog-item">
     		<h3>
-    		<a href="catalog-item.html"><span class = "catalog-category">Гель для волос</span> 
+    		<a href="catalog-item.html"><span class = "catalog-category">Гель для волос</span></a>
     			<span class = "catalog-item">«American crew»</span>
-    		</a>
     		</h3>
-    		<p>
-    			<a href="catalog-item-image">
-    				<img src="img/product-5.jpg" width = "220" height = "165" alt = "Гель для волос «American crew»">
-    			</a> 			
-    		</p>
+    		<p><img src="img/product-5.jpg" width = "220" height = "165" alt = "Гель для волос «American crew»"></p>
     		<p class = "catalog-item-price">
     			<b>300 руб.</b>
     			<a class = "button" href="#">Купить</a>
-    		</p>		
+    		</p>
     	</li>
     </ul>
     <ul class = "catalog-list">
     	<li class = "catalog-item">
     		<h3>
-    		<a href="catalog-item.html"><span class = "catalog-category">Набор для бритья</span> 
+    		<a href="catalog-item.html"><span class = "catalog-category">Набор для бритья</span></a>
     			<span class = "catalog-item">«Baxter of California»</span>
-    		</a>
     		</h3>
-    		<p>
-    			<a href="catalog-item-image">
-    				<img src="img/product-6.jpg" width = "220" height = "165" alt = "Набор для бритья «Baxter of California»">
-    			</a> 			
-    		</p>
+    		<p><img src="img/product-6.jpg" width = "220" height = "165" alt = "Набор для бритья «Baxter of California»"></p>>
     		<p class = "catalog-item-price">
     			<b>3 900 руб.</b>
     			<a class = "button" href="#">Купить</a>
-    		</p>		
+    		</p>
     	</li>
     </ul>
     <ul class = "pagination-list">
@@ -219,20 +177,10 @@
             <input type="checkbox" name="remember-me" id="remember-me">
             <label for = "remember-me">Запомните меня</label>
             <input type = "submit" value = "Войти">
-      </form> 
+      </form>
     <div class = "help">
       <p><a href="#">Я забыл пароль!</a></p>
     </div>
-    <span class = "modal-close">
-      <img src="img/cross.svg" width="12" height="12">
-    </span>
-    <span class = "user">
-      <img src="img/lock.svg" width="13" height="15">
-    </span>
-    <span>
-      <img src="img/user.svg" width="13" height="13">
-    </span>
-  	<span class = "modal-close">х</span>
   </section>
 </body>
 </html>
